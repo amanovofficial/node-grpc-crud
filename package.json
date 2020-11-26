@@ -5,7 +5,7 @@
   "main": "contacts_server.js",
   "scripts": {
     "server": "nodemon contacts_server.js",
-    "client": "nodemon demoRequests"
+    "client": "nodemon demoRequests.js"
   },
   "keywords": [],
   "author": "",

@@ -5,7 +5,7 @@ const newContact = {
     name: 'Julia',
     phoneNumber: '+117327030101'
 }
-// client.Create(newContact,createCallback)
+client.Create(newContact,createCallback)
 
 
 // Получение списка всех контактов
@@ -25,7 +25,7 @@ const updateableContact = {
 
 // Удаление контакта
     name = 'Sofia' //имя удаляемого контакта
-client.Delete({name},deleteCallback)
+// client.Delete({name},deleteCallback)
 
 
 
