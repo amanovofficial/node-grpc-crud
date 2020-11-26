@@ -1,0 +1,19 @@
+{
+  "name": "Contacts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contacts_server.js",
+  "scripts": {
+    "server": "nodemon contacts_server.js",
+    "client": "nodemon demoRequests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "grpc": "^1.24.4",
+    "mongoose": "^5.10.16",
+    "nodemon": "^2.0.6"
+  }
+}

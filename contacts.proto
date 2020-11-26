@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package contacts;
+
+service ContactService{
+    rpc Create(Contact) returns (Contact){}
+    rpc GetAllContacts(Empty) returns (Contacts){}
+    rpc GetByContactName(ContactName) returns (Contact){}
+    rpc Update(UpdateableContact) returns (Contact){}
+    rpc Delete(ContactName) returns (Empty){}
+
+}
+message Empty {}
+
+message Contact {
+    string name = 1;
+    string phoneNumber = 2;
+}
+
+message Contacts {
+    repeated Contact contacts = 1;
+}
+
+message ContactName {
+    string name = 1;
+}
+
+message UpdateableContact {
+    string currentName = 1;
+    string newName = 2;
+    string newPhoneNumber = 3;
+}
